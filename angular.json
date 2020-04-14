@@ -127,12 +127,8 @@
       }
     }
   },
-<<<<<<< HEAD
-  "defaultProject": "weather-website"
-=======
   "defaultProject": "weather-website",
   "cli": {
     "analytics": "7c634e98-842b-409a-a3f6-1f92ff155a6a"
   }
->>>>>>> f2b37329d1d2e8ff28e12c2b538873c39b92bdd4
 }
