@@ -1,9 +1,11 @@
 .today-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: teal;
     width: 100%;
     height: 100%;
 }
 .today-content img {
-    width: 100px;
+    width: 5%;
 }
