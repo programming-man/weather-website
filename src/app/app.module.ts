@@ -7,13 +7,15 @@ import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodayWeatherComponent } from './today-weather/today-weather.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FutureWeatherComponent } from './future-weather/future-weather.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    TodayWeatherComponent
+    TodayWeatherComponent,
+    FutureWeatherComponent
   ],
   imports: [
     BrowserModule,
