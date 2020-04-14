@@ -1,9 +1,16 @@
 <router-outlet></router-outlet>
 <div class="main-content">
   <div class="content-weather">
-    <app-nav></app-nav>
-    <app-current-weather></app-current-weather>
-    <app-today-weather></app-today-weather>
-  </div>
+    <div class="nav-container">
+       <app-nav></app-nav>
+      </div>
+    <div class="current-container">
+      <app-current-weather></app-current-weather>
+     </div>
+    <div class="today-container">
+      <app-today-weather></app-today-weather>
+     </div>
+    <div class="future-container"> 
+      <app-future-weather></app-future-weather> 
+    </div>
 </div>
-<app-future-weather></app-future-weather>
