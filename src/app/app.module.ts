@@ -10,6 +10,8 @@ import { TodayWeatherComponent } from './today-weather/today-weather.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FutureWeatherComponent } from './future-weather/future-weather.component'; 
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { FutureWeatherComponent } from './future-weather/future-weather.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
