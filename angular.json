@@ -127,8 +127,9 @@
       }
     }
   },
+  
   "defaultProject": "weather-website",
   "cli": {
-    "analytics": "7c634e98-842b-409a-a3f6-1f92ff155a6a"
+    "analytics": "439896a4-e648-4686-bf7c-045ff8cdb627"
   }
 }
