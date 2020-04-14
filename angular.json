@@ -127,8 +127,19 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "weather-website",
   "cli": {
     "analytics": "439896a4-e648-4686-bf7c-045ff8cdb627"
   }
+=======
+<<<<<<< HEAD
+  "defaultProject": "weather-website"
+=======
+  "defaultProject": "weather-website",
+  "cli": {
+    "analytics": "7c634e98-842b-409a-a3f6-1f92ff155a6a"
+  }
+>>>>>>> f2b37329d1d2e8ff28e12c2b538873c39b92bdd4
+>>>>>>> 206301d1e3c12ec3d11b826c33b82f2706370c85
 }
