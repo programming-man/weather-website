@@ -9,13 +9,15 @@ import { TodayWeatherComponent } from './today-weather/today-weather.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component'; 
+import { FutureWeatherComponent } from './future-weather/future-weather.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     TodayWeatherComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
+    FutureWeatherComponent
   ],
   imports: [
     BrowserModule,
