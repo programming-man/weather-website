@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodayWeatherComponent } from './today-weather/today-weather.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { CurrentWeatherComponent } from './current-weather/current-weather.component'; 
 import { FutureWeatherComponent } from './future-weather/future-weather.component'; 
 
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -17,6 +18,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AppComponent,
     NavComponent,
     TodayWeatherComponent,
+    CurrentWeatherComponent,
     FutureWeatherComponent
   ],
   imports: [
