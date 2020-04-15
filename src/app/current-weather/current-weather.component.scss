@@ -1,5 +1,5 @@
 .weather-content {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -8,4 +8,35 @@
   display: block;
   width: 60px;
   height: 60px;
+}
+
+.input-weat {
+  height: 62px;
+}
+
+.txtSearch {
+  border: 0px solid #222;
+  background: #EEE;
+  width: 26%px;
+  height: 23px;
+  margin: 0 auto;
+  padding: 5px 0 5px 5px;
+  float: left; // posição do campo
+  line-height: 36px; // altura da linha
+}
+
+.Search {
+  background: #00cccc;
+  border: 0px solid #222;
+  color: #FFF;
+  padding: 10px 10PX 11px 10px;
+  border: 0 none;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: url(../../assets/fav-icon/search.svg);
+}
+
+.Search:hover {
+  background: #99cccc;
 }

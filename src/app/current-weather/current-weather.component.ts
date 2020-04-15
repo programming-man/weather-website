@@ -13,6 +13,7 @@ export class CurrentWeatherComponent implements OnInit {
   cityWeather = {
     description: "Chuvoso",
     degrees: "30",
+    date: "15/04/2020"
   };
 
   constructor() { }

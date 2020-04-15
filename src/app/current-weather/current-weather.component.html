@@ -4,12 +4,15 @@
     <span class="text-current-weather">{{ cityWeather.description }}</span>
     <span class="number-current-weather">{{ cityWeather.degrees }}</span>
   </div>
-  <div class="input-city"> 
-    <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)"> 
-      <input type="text" name="city" formControlName="city">
-      <input type="submit" value="Pesquisar">
-      <p>Quarta-Feira - 15 de Abril</p>
+  <div class="input-city">
+    <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)">
+      <input class="txtSearch" name="q" type="text" value="" placeholder="Digite o que você procura" />
+      <input class="Search" type="submit" value="" />
       <p>{{ city }}</p>
+      <p>{{ cityWeather.date }}</p>
+      <div class="input-weat">
+      </div>
+
     </form>
   </div>
 </div>
