@@ -2,8 +2,14 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  height: 100%;
+  box-shadow: 5px 0 5px -4px #000;
 }
 
-.nav .nav-itens {
+.nav-itens {
   cursor: pointer;
+}
+
+.nav-itens i {
+  font-size: 2.1rem;
 }
