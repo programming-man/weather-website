@@ -1,20 +1,15 @@
-<div class="weather-content">
+<div class="container">
   <div class="icon-current-weather">
-    <img src="../../assets/img/078-cloudy.png" alt="cloudy">
+    <img src="../../assets/animated/cloudy-day-1.svg" alt="cloudy">
     <span class="text-current-weather">{{ cityWeather.description }}</span>
     <span class="number-current-weather">{{ cityWeather.degrees }}˚</span>
   </div>
   <div class="city-content"> 
     <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)"> 
       <input class="input-city" type="text" name="city" formControlName="city">
-      <input class="btn-city" type="submit" value="">
+      <input class="btn-city" type="submit" value="Pesquisar">
       <p>Quarta-Feira - 15 de Abril</p>
       <p>{{ city }}</p>
-      <!-- <mat-form-field class="input-city" appearance="outline">
-        <mat-label>Digite o nome da cidade</mat-label>
-        <input matInput placeholder="São Paulo">
-        <mat-icon matSuffix>search</mat-icon>
-      </mat-form-field> -->
     </form>
   </div>
 </div>

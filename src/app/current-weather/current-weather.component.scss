@@ -1,28 +1,41 @@
-.weather-content {
+.container {
   display:flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  border-right: solid 1px;
 }
 
-.icon-current-weather img {
-  display: block;
-  width: 60px;
-  height: 60px;
+.icon-current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+}
+.icon-current-weather img{
+  width: 173px;
+  height: 173px
 }
 
 .text-current-weather {
-  display: block;
-  padding: 10px;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
 .number-current-weather {
-  display: block;
+  margin-top: 10px;
+  font-size: 3em;
   padding: 10px;
 }
 
+.city-content {
+  display: flex;
+  height: 40%;
+}
+
 .input-city {
-  border-color: #fff;
+  height: 10px;
 }
 
 .input-city:focus {
@@ -31,6 +44,5 @@
 }
 
 .btn-city {
-  width: 10px;
-  border-radius: 10px;
+  height: 20px;
 }

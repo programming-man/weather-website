@@ -11,6 +11,7 @@
   background-size: cover;
   z-index: 0;
 }
+
 .cloud {
   position: fixed;
   top: 0;
@@ -23,6 +24,7 @@
   background-size: cover;
   z-index: 0;
 }
+
 @keyframes animate {
   0%{
     background-position: 0px;
@@ -45,6 +47,7 @@
     box-shadow: 0 0 10px black;
     background-color: rgba( 0, 0, 0, .3);
     z-index: 1;
+    color: #fff;
 }  
 
 .nav-container { 
