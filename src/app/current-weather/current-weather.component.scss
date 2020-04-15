@@ -1,7 +1,13 @@
 .weather-content {
   display: flex;
+}
+
+.container {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  border-right: solid 1px;
 }
 
 .icon-current-weather img {
@@ -16,27 +22,80 @@
 
 .txtSearch {
   border: 0px solid #222;
-  background: #EEE;
+  background: #fff;
   width: 26%px;
   height: 23px;
   margin: 0 auto;
   padding: 5px 0 5px 5px;
   float: left; // posição do campo
   line-height: 36px; // altura da linha
+  outline: none;
 }
 
-.Search {
-  background: #00cccc;
-  border: 0px solid #222;
-  color: #FFF;
-  padding: 10px 10PX 11px 10px;
+.search {
+  width: 40px;
+  height: 33px;
+  padding: 10px 10px 8px 10px;
   border: 0 none;
-  font-size: 11px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: url(../../assets/fav-icon/search.svg);
+  background-color: #fff;
+  background-image: url(../../assets/fav-icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.Search:hover {
-  background: #99cccc;
+.search img {
+  width: 100%;
+  height: auto;
+}
+
+.search:hover {
+  cursor: pointer;
+  background-size: 1;
+  filter: invert(10%);
+  outline: none;
+}
+
+.search:active,
+.search:focus {
+  outline: none;
+}
+
+.icon-current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+}
+
+.icon-current-weather img {
+  width: 173px;
+  height: 173px
+}
+
+.text-current-weather {
+  font-size: 1em;
+}
+
+.number-current-weather {
+  margin-top: 10px;
+  font-size: 3em;
+  padding: 10px;
+}
+
+.city-content {
+  display: flex;
+  height: 40%;
+}
+
+.input-city {
+  height: 10px;
+}
+
+.input-city:focus {
+  border-color: #fff;
+}
+
+.btn-city {
+  height: 20px;
 }
