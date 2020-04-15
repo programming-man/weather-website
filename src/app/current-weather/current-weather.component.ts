@@ -10,6 +10,10 @@ export class CurrentWeatherComponent implements OnInit {
 
     formWeather:any;
     city:any;
+    cityWeather = {
+      description: "Chuvoso",
+      degrees: "30",
+    };
 
   constructor() { }
 
