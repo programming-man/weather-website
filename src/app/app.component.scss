@@ -21,17 +21,17 @@
 }
 
 .content-weather {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  max-width: 711px;
-  max-height: 431px;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(116, 116, 116, 0.461);
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 1000px;
+    max-height: 700px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px black;
+}  
 
 .nav-container { 
   grid-area: 1 / 1 / 2 / 2; 
@@ -47,9 +47,7 @@
 }
 
 .today-container { 
-  grid-area: 1 / 2 / 4 / 4; 
-  width: 100%;
-  height: 100%;
+  grid-area: 1 / 2 / 4 / 4;
 }
 
 .future-container { 
