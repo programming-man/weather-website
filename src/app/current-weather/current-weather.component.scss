@@ -1,0 +1,11 @@
+.weather-content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-current-weather img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
