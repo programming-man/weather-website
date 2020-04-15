@@ -4,12 +4,12 @@
     <span class="text-current-weather">Ensolarado</span>
     <span class="number-current-weather">29˚</span>
   </div>
-  <div class="input-city">
-    <input type="text">
-    <p>Quarta-Feira - 15 de Abril</p>
-    <p>São Paulo - SP</p>
+  <div class="input-city"> 
+    <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)"> 
+      <input type="text" name="city" formControlName="city">
+      <input type="submit" value="Pesquisar">
+      <p>Quarta-Feira - 15 de Abril</p>
+      <p>{{ city }}</p>
+    </form>
   </div>
 </div>
-
-
-

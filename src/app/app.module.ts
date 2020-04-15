@@ -12,6 +12,8 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { FutureWeatherComponent } from './future-weather/future-weather.component'; 
 
 import {MatGridListModule} from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,15 @@ import {MatGridListModule} from '@angular/material/grid-list';
     CurrentWeatherComponent,
     FutureWeatherComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
