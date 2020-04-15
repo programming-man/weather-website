@@ -1,9 +1,63 @@
+.weather-content {
+  display: flex;
+}
+
 .container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   box-shadow: 5px 0 5px -4px #000;
+}
+
+.icon-current-weather img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.input-weat {
+  height: 62px;
+}
+
+.txtSearch {
+  border: 0px solid #222;
+  background: #fff;
+  width: 26%px;
+  height: 23px;
+  margin: 0 auto;
+  padding: 5px 0 5px 5px;
+  float: left; // posição do campo
+  line-height: 36px; // altura da linha
+  outline: none;
+}
+
+.search {
+  width: 40px;
+  height: 33px;
+  padding: 10px 10px 8px 10px;
+  border: 0 none;
+  background-color: #fff;
+  background-image: url(../../assets/fav-icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search img {
+  width: 100%;
+  height: auto;
+}
+
+.search:hover {
+  cursor: pointer;
+  background-size: 1;
+  filter: invert(10%);
+  outline: none;
+}
+
+.search:active,
+.search:focus {
+  outline: none;
 }
 
 .icon-current-weather {
@@ -13,14 +67,14 @@
   height: 60%;
   width: 100%;
 }
-.icon-current-weather img{
+
+.icon-current-weather img {
   width: 173px;
   height: 173px
 }
 
 .text-current-weather {
   font-size: 1em;
-  text-transform: uppercase;
 }
 
 .number-current-weather {
@@ -40,7 +94,6 @@
 
 .input-city:focus {
   border-color: #fff;
-
 }
 
 .btn-city {

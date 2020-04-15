@@ -1,15 +1,15 @@
 <div class="container">
   <div class="icon-current-weather">
     <img src="../../assets/animated/cloudy-day-1.svg" alt="cloudy">
-    <span class="text-current-weather">{{ cityWeather.description }}</span>
+    <span class="text-current-weather">{{ cityWeather.description | uppercase }}</span>
     <span class="number-current-weather">{{ cityWeather.degrees }}˚</span>
   </div>
-  <div class="city-content"> 
-    <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)"> 
-      <input class="input-city" type="text" name="city" formControlName="city">
-      <input class="btn-city" type="submit" value="Pesquisar">
-      <p class="">Quarta-Feira - 15 de Abril</p>
-      <p>{{ city }}</p>
+  <div class="input-city">
+    <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)">
+      <input class="txtSearch" name="city" formControlName="city"type="text" value="" placeholder="Digite o que você procura" />
+      <input class="search" type="submit" value=""/>
+      <p>{{ city | titlecase }}</p>
+      <p>{{ cityWeather.date }}</p>
     </form>
   </div>
 </div>
