@@ -9,3 +9,28 @@
   width: 60px;
   height: 60px;
 }
+
+.text-current-weather {
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.number-current-weather {
+  display: block;
+  padding: 10px;
+}
+
+.input-city {
+  border-color: #fff;
+}
+
+.input-city:focus {
+  border-color: #fff;
+
+}
+
+.btn-city {
+  width: 10px;
+  border-radius: 10px;
+}
