@@ -7,11 +7,12 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  box-shadow: 5px 0 5px -4px #000;
+  box-shadow: 5px 0 5px -5px #333;
+  color: #fff;
 }
 
 .icon-current-weather img {
-  display: block;
+  display: flex;
   width: 60px;
   height: 60px;
 }
@@ -69,8 +70,8 @@
 }
 
 .icon-current-weather img {
-  width: 173px;
-  height: 173px
+  width: 50%;
+  height: auto;
 }
 
 .text-current-weather {
