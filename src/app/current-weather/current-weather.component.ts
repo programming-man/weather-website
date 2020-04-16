@@ -10,24 +10,26 @@ import { Model } from '../model';
 })
 export class CurrentWeatherComponent implements OnInit {
 
+  infoApi:any;
+
   formWeather: any;
   city: any;
-  
-  cityWeather = {
-    description: "Chuvoso",
-    degrees: "30",
-    date: "15/04/2020"
-  };
 
   model:Model[]
-
+  weatherData
   constructor(private weatherApi:SearchWeatherService ) { }
 
   ngOnInit() {
+    let cidade = 'city='
     this.formWeather = new FormGroup({
       city: new FormControl("", Validators.compose([
         Validators.required
       ]))
+    })
+    this.weatherApi.getWeather(cidade, "São Paulo").subscribe((resposta)=>{
+      this.infoApi = resposta;
+      let resp = this.infoApi.data[0];
+      this.weatherData = new Model(resp.temp,resp.city_name, resp.datetime, resp.weather.description)    
     })
   }
 
@@ -35,10 +37,11 @@ export class CurrentWeatherComponent implements OnInit {
     this.city = dataName.city;
     let cidade = 'city='
     this.weatherApi.getWeather(cidade, this.city).subscribe((resposta)=>{
-      console.log(resposta)
+      this.infoApi = resposta;
+      let resp = this.infoApi.data[0];
+      this.weatherData = new Model(resp.temp,resp.city_name, resp.datetime, resp.weather.description)
+      console.log(this.weatherData)
     })
-    
-    
   }
 
 }

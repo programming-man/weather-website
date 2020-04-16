@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { Model } from '../app/model' 
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs'
+import { Model } from '../app/model'
+import { ModelFuture } from '../app/modelFuture'
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +21,8 @@ export class SearchWeatherService {
     return this.apiUrl.get<Model[]>(this.baseUrl+`${cityOrZip}${searchValue}&${this.key}`)
   }
 
-  getDaily(initial, final){
-    return this.dailyUrl.get(this.dailyUrl+`${initial}${final}&${this.key}`)
-  }
+  // getDaily(initial, final): Observable<ModelFuture[]>{
+  //   return this.dailyUrl.get<ModelFuture[]>(this.dailyUrl+`${initial}${final}&${this.key}`)
+  // }
 }
 

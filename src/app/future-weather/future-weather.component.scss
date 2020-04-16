@@ -1,61 +1,113 @@
 // Div que recebe o Grid //
-.seq-days {
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     width: 100%;
     height: 100%;
     text-align: center;
+    box-shadow: 0 5px 5px -5px #333;
+    font: 300 1.2vw Roboto;
 }
 
-// Separadores do Grid //
+// Navegação do dia //
 .nav-grid-content {
     grid-area: 1 / 1 / 2 / 4;
+    width: 100%;
 }
-
-.sec-day {
-    grid-area: 2 / 1 / 5 / 2;
-}
-
-.thi-day {
-    grid-area: 2 / 2 / 5 / 3;
-}
-
-.for-day {
-    grid-area: 2 / 3 / 5 / 4;
-}
-
-// Conteúdo da Nav-Grid //
 .nav-grid-content p {
     margin: 3% 0 0 0;
-    width: 100%;
     text-align: center;
     font-weight: 300;
+    color: #fff;
 }
-
 .nav-grid-content i {
     color: #fff;
 }
 
+
 .nav-grid-content label {
     color: #fff;
 }
-
-// img e svg //
-.wea-status {
-    width: 70%;
-    margin: -15% 15% 3%;
+// Grid com fases do dia //
+.morn {
+    grid-area: 2 / 1 / 5 / 2;
+    width: 100%;
 }
 
-// Quantidade de graus da temperatura //
-.degree-inf {
-    font-size: 2em;
-    color: #fff;
+.aftn {
+    grid-area: 2 / 2 / 5 / 3;
+    width: 100%;
+}
+
+.nign {
+    grid-area: 2 / 3 / 5 / 4;
+    width: 100%;
+}
+
+// img/svg: manhã - tarde - noite //
+.morn-icon {
+    width: 50%;
+    margin: 0 25% 0 25%;
+    
+}
+.aftn-icon {
+    width: 50%;
+    margin: 0 25% 0 25%;
+} 
+.nign-icon {
+    width: 50%;
+    margin: 0 25% 0 25%;
 }
 
 // Nome dos dias //
-.next-date {
-    margin: 20% 0 5% 0;
+.morn-desc {
+    margin: 5% 0 5% 0;
     font-size: 1.3em;
     color: #fff;
+    width: 100%;
+    text-align: center;
 }
+.aftn-desc {
+    margin: 5% 0 5% 0;
+    font-size: 1.3em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.nign-desc {
+    margin: 5% 0 5% 0;
+    font-size: 1.3em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+// Temperaturas ao decorrer do dia //
+.morn-degree {
+    margin: 5% 0 5% 0;
+    font-size: 1.3em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.aftn-degree {
+    margin: 5% 0 5% 0;
+    font-size: 1.3em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.nign-degree {
+    margin: 5% 0 5% 0;
+    font-size: 1.3em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+//
+@media all and (min-width: 400px)  {  .container  { font-size:0.8vw;  } }
+@media all and (min-width: 500px)  {  .container  { font-size:1.0vw;  } }
+@media all and (min-width: 600px)  {  .container  { font-size:1.2vw;  } }
+@media all and (min-width: 700px)  {  .container  { font-size:1.3vw;  } }
+@media all and (min-width: 800px)  {  .container  { font-size:1.4vw;  } }
