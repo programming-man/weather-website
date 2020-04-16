@@ -8,7 +8,7 @@
     <form [formGroup]="formWeather" (ngSubmit)="getCity(formWeather.value)">
       <input class="txtSearch" name="city" formControlName="city" type="text" value="" placeholder="Digite o que você procura" />
       <input class="search" type="submit" value=""/>
-      <p>{{ city | titlecase }}</p>
+      <p>Clima hoje em: {{ city | titlecase }}</p>
       <p>{{ cityWeather.date }}</p>
     </form>
   </div>
