@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-future-weather',
   templateUrl: './future-weather.component.html',
@@ -8,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class FutureWeatherComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { SearchWeatherService } from '../search-weather.service'
+import { SearchWeatherService } from '../search-weather.service';
+import { Model } from '../model';
 
 @Component({
   selector: 'app-current-weather',
@@ -17,6 +18,8 @@ export class CurrentWeatherComponent implements OnInit {
     degrees: "30",
     date: "15/04/2020"
   };
+
+  model:Model[]
 
   constructor(private weatherApi:SearchWeatherService ) { }
 

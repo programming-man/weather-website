@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { HttpHeaders } from '@angular/common/http'
-/* import { Model } from '../app/model' */
+import { Model } from '../app/model' 
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,17 +11,17 @@ export class SearchWeatherService {
   constructor(private apiUrl: HttpClient) { }
 
   private baseUrl = 'http://api.weatherbit.io/v2.0/current?'
-  
+  private dailyUrl = 'https://www.weatherbit.io/api/weather-history-daily'
+
   private key = 'country=BR&lang=pt&key=67d0293a42424f7e8d45ff2af10cdf52'
 
-
-  getWeather(cityOrZip, searchValue){
-    const headers = new HttpHeaders()
-      .set('content-type', 'application/json')
-      .set('Access-Control-Allow-Origin', '*');
+  getWeather(cityOrZip, searchValue): Observable<Model[]>{
     //retornando agora
-    return this.apiUrl.get(this.baseUrl+`${cityOrZip}${searchValue}&${this.key}`, { headers: headers })
+    return this.apiUrl.get<Model[]>(this.baseUrl+`${cityOrZip}${searchValue}&${this.key}`)
   }
 
+  getDaily(initial, final){
+    return this.dailyUrl.get(this.dailyUrl+`${initial}${final}&${this.key}`)
+  }
 }
 
