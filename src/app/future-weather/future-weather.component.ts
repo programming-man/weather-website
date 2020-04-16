@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+/* import { ModelFuture } from '../app/modelFuture' */
 
 @Component({
   selector: 'app-future-weather',

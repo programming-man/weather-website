@@ -1,4 +1,4 @@
-export class Model{
+export class ModelFuture{
     public temperature: number;
     public city: string;
     public date: string;
