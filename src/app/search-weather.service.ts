@@ -18,9 +18,7 @@ export class SearchWeatherService {
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*');
-    console.log('Entrou na GetWeather');
-    console.log(cityOrZip)
-    console.log(searchValue)
+    //retornando agora
     return this.apiUrl.get(this.baseUrl+`${cityOrZip}${searchValue}&${this.key}`, { headers: headers })
   }
 
