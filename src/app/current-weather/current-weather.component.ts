@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { SearchWeatherService } from '../search-weather.service'
 
 @Component({
   selector: 'app-current-weather',
@@ -17,19 +18,22 @@ export class CurrentWeatherComponent implements OnInit {
     date: "15/04/2020"
   };
 
-  constructor() { }
+  constructor(private weatherApi:SearchWeatherService ) { }
 
   ngOnInit() {
     this.formWeather = new FormGroup({
       city: new FormControl("", Validators.compose([
-        Validators.required,
-        Validators.pattern('[a-zA-Z ]*')
+        Validators.required
       ]))
     })
   }
 
   getCity(dataName) {
     this.city = dataName.city;
+    let cidade = 'city='
+    this.weatherApi.getWeather(cidade, this.city)
+    
+    
   }
 
 }
