@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { HttpHeaders } from '@angular/common/http'
 /* import { Model } from '../app/model' */
+/* import { ModelFuture } from '../app/modelFuture' */
 
 @Injectable({
   providedIn: 'root'
