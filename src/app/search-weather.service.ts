@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { HttpHeaders } from '@angular/common/http'
+/* import { Model } from '../app/model' */
 
 @Injectable({
   providedIn: 'root'
@@ -18,10 +19,8 @@ export class SearchWeatherService {
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
       .set('Access-Control-Allow-Origin', '*');
-
-    this.baseUrl+cityOrZip+searchValue+this.key
-    
-    return this.apiUrl.get(this.baseUrl+cityOrZip+searchValue+this.key)
+    //retornando agora
+    return this.apiUrl.get(this.baseUrl+`${cityOrZip}${searchValue}&${this.key}`, { headers: headers })
   }
 
 }
