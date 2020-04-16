@@ -31,7 +31,11 @@ export class CurrentWeatherComponent implements OnInit {
   getCity(dataName) {
     this.city = dataName.city;
     let cidade = 'city='
-    this.weatherApi.getWeather(cidade, this.city)
+    console.log(this.city)
+    console.log(cidade)
+    this.weatherApi.getWeather(cidade, this.city).subscribe((resposta)=>{
+      console.log(resposta)
+    })
     
     
   }
