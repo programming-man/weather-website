@@ -32,8 +32,6 @@ export class CurrentWeatherComponent implements OnInit {
     this.city = dataName.city;
     let cidade = 'city='
     this.weatherApi.getWeather(cidade, this.city)
-    
-    
   }
 
 }

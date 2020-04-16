@@ -20,7 +20,7 @@ export class SearchWeatherService {
       .set('Access-Control-Allow-Origin', '*');
 
     this.baseUrl+cityOrZip+searchValue+this.key
-    console.log('Entrou na GetWeather');
+    
     return this.apiUrl.get(this.baseUrl+cityOrZip+searchValue+this.key)
   }
 
